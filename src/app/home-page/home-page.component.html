@@ -1,0 +1,3 @@
+<app-filtrele [categories]="categories" (selectedCategory)="filterBooks($event)"></app-filtrele>
+<!-- <button (click)="goToCard()">seçilen kitaplar</button> -->
+<app-book-card-list [books]="filteredBooks" (addCard)="addToCard($event)"></app-book-card-list>

@@ -1,0 +1,24 @@
+
+
+<app-select-form-example></app-select-form-example>
+<div class="container">
+
+
+  <div class="example-button-container">
+    <button mat-fab color="secondary" aria-label="Example icon button with a delete icon" (click)="goToCard()">
+      <mat-icon><span class="material-symbols-outlined">
+        shopping_bag
+        </span></mat-icon>
+    </button>
+  </div>
+  <button mat-button [matMenuTriggerFor]="menu">SORT according to</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>book rating</button>
+  <button mat-menu-item>book name</button>
+  <button mat-menu-item>book year</button>
+</mat-menu>
+  @for (category of categories; track $index) {
+    <button mat-flat-button (click)="handleCategory(category)">{{category}}</button>
+  }
+
+</div>

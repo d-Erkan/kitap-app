@@ -1,0 +1,37 @@
+.example-button-container {
+  display: flex;
+  justify-content: center;
+  width: 120px;
+}
+.container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:center
+}
+.kutucuklar{
+  border: 1px solid rgb(175, 209, 209);
+  width:28%;
+  padding: 12px;
+  margin:12px;
+  background-color: rgb(175, 209, 209);
+  div{
+    margin-bottom: 12px;
+  }
+}
+
+.texts{
+  display: flex;
+  flex-direction:row;
+  .baslik{
+    font-size: larger;
+    font-weight: bold;
+  }
+}
+
+.rating
+{
+  color: rgb(155, 22, 22);
+  font-size: 12px;
+  font-style: italic;
+}

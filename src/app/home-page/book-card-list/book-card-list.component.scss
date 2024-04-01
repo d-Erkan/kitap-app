@@ -1,0 +1,47 @@
+.container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:center
+}
+.kutucuklar{
+  border: 1px solid rgb(175, 209, 209);
+  width:28%;
+  padding: 12px;
+  margin:12px;
+  background-color: rgb(175, 209, 209);
+  div{
+    margin-bottom: 12px;
+  }
+}
+
+.texts{
+  display: flex;
+  flex-direction:column;
+  font-style: italic;
+  .baslik{
+    font-size: larger;
+    font-weight: bold;
+  }
+}
+
+.rating
+{
+  color: rgb(185, 17, 101);
+  // font-size: 1.1rem;
+  // font-style: italic;
+  font-weight: bold;
+}
+.yil{
+  font-style: italic;
+
+}
+
+.button{
+
+  border-radius: 50%;
+
+  justify-content: center;
+  align-items: center;
+  margin-right: 10%;
+}

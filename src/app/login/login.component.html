@@ -1,0 +1,46 @@
+<!-- <div>
+  <h2>Login</h2>
+  <form (ngSubmit)="login()">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required />
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required />
+
+    <button type="submit">Login</button>
+  </form>
+</div> -->
+<!-- <button (click)="goToSignUp()">Kayıt olun</button> -->
+<div class="container">
+  <div class="image"></div>
+  <div class="forms">
+    <h1 style="color: rgb(10, 44, 73)">Hoş geldiniz</h1>
+    <h3>Sizi aramızda görmeye sevindik!</h3>
+        <input
+          type="email"
+          matInput
+          formControlName="mail"
+          placeholder="blahblah@gmail.com"
+        />
+
+        <input
+          type="pas"
+          matInput
+          formControlName="Şifre"
+          placeholder="012345"
+        />
+      <button
+        mat-raised-button
+        class="buttons"
+        (click)="goToHome()"
+      >
+        Giriş Yap
+      </button>
+
+      <button mat-raised-button class="buttons" (click)="goToSignUp()">
+        Kayıt oluştur
+      </button>
+
+  </div>
+  <div class="image"></div>
+</div>

@@ -1,0 +1,16 @@
+<div class="container">
+  @for (book of card; track $index) {
+    <div class="kutucuklar">
+    <div class= "texts">
+      <div class="baslik">{{ book.name }}</div>
+      <div>-</div>
+      <div>{{ book.year }}</div>
+    </div>
+      <div>{{ book.author}}</div>
+      <div class="rating">{{ book.rating }}</div>
+  </div>
+
+  }
+
+</div>
+

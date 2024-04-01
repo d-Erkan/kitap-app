@@ -1,0 +1,23 @@
+<div class="container">
+
+
+  @for (book of books; track $index) {
+    <div class="kutucuklar">
+    <div class= "texts">
+      <div class="baslik">{{ book.name }}</div>
+      <div class="yil">Written in {{ book.year }}</div>
+      <div class="yil">Author: {{ book.author}}</div>
+
+    </div>
+      <div class="rating">Rating: {{ book.rating }}</div>
+
+
+      <button mat-flat-button class="button" color="primary"(click)="addToCard(book)">sepete ekle</button>
+      <button mat-flat-button class="button" color="primary"(click)="showDescr(book)">description</button>
+
+  </div>
+
+  }
+
+</div>
+
